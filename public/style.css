@@ -1,0 +1,1630 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: 0;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+:root {
+  --white: #fff;
+  --Clear-Blue: #377dff;
+  --Golden-Yellow: #ffd600;
+  --Wood-smoke: #131313;
+  --Star-Dust: #a1a1a1;
+  --Seashell: #ddd;
+  --Poppins: "Poppins", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--Poppins);
+  background-image: url("../images/jailam-rashad-Qe58SmRMcH4-unsplash\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 900px;
+}
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 900px;
+}
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7.75rem;
+}
+header img {
+  width: 40px;
+  height: 40px;
+}
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 700;
+}
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.2s ease;
+}
+nav ul a:hover {
+  color: #ffd600;
+}
+.sign {
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign a {
+  width: 105px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.sign a:active {
+  transform: scale(0.97);
+}
+.sign-up {
+  background-color: var(--white);
+  color: #000;
+}
+.sign-up:hover {
+  background-color: #ddd;
+}
+.log-in {
+  background-color: var(--Clear-Blue);
+}
+.log-in:hover {
+  background-color: #00aeff;
+}
+
+main {
+  margin: 5rem 0 0 7.75rem;
+
+}
+.title p:first-of-type {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+.title h1 {
+  color: var(--white);
+  font-size: 4.688rem;
+  font-weight: 700;
+  width: 70%;
+  line-height: 95px;
+  letter-spacing: 5px;
+  margin-bottom: 1.563rem;
+}
+.title span {
+  color: var(--Golden-Yellow);
+}
+.title p:last-of-type {
+  color: var(--Wood-smoke);
+  font-size: 1.063rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 34px;
+  width: 60%;
+}
+
+.services {
+  width: 440px;
+  height: 54px;
+  display: flex;
+  background-color: var(--Seashell);
+  border-radius: 12px 12px 0 0;
+  margin-top: 3.938rem;
+}
+.services div {
+  width: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.services img {
+  width: 16px;
+  height: 16px;
+}
+.services span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 0.75rem;
+}
+.cards {
+  width: 972px;
+  height: 136px;
+}
+#flight-btn {
+  background-color: var(--white);
+  border-top-left-radius: 12px;
+  transition: 0.3s ease;
+}
+#hotels-btn {
+  transition: 0.2s ease;
+}
+#rent-btn {
+  border-top-right-radius: 12px;
+  transition: 0.2s ease;
+}
+#flight {
+  width: 972px;
+  height: 136px;
+  background-color: var(--white);
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+  display: flex;
+}
+.flight{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Destination,
+.When,
+.Peoples {
+  width: 30%;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-icons img {
+  width: 22px;
+  height: 22px;
+  margin-right: 1.25rem;
+}
+.card-icons span {
+  font-weight: 600;
+}
+.custom-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-select select {
+  border: none;
+  outline: none;
+  color: var(--Star-Dust);
+}
+.custom-select option {
+  color: #000;
+}
+#flight form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form i {
+  font-size: 0.875rem;
+  color: var(--Star-Dust);
+}
+form input {
+  border: none;
+  outline: none;
+  width: 160px;
+  color: var(--Star-Dust);
+}
+
+.Search {
+  width: 20%;
+  height: 100%;
+  background-color: var(--Clear-Blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+}
+.Search div {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Search img {
+  width: 24.05px;
+  height: 22.97px;
+}
+.Search span {
+  color: var(--white);
+}
+
+#hotels {
+  width: 972px;
+  height: 200px;
+  background-color: var(--white);
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+  background-image: url("../images/Strand-mit-Palmen-©-MBaum-1000x200.webp");
+
+}
+.hotels-choose {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 30px 30px 30px;
+
+}
+.hotels {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#three-stars,
+#four-stars,
+#five-stars {
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+#three-stars {
+  background: rgb(8, 146, 82);
+}
+#three-stars:hover {
+  background: rgb(1, 197, 106);
+}
+#four-stars {
+  background: rgb(8, 118, 146);
+}
+#four-stars:hover {
+  background: rgb(0, 159, 199);
+}
+#five-stars {
+  background: rgb(95, 8, 146);
+}
+#five-stars:hover {
+  background: rgb(162, 0, 255);
+}
+.hotels img {
+  width: 100%;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
+}
+.hotels p {
+  color: var(--white);
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  color: gold;
+}
+
+.choose-container {
+  width: 20%;
+  height: 100%;
+  background-color: #1366ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+  color: var(--white);
+}
+.choose {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.choose i {
+  font-size: 1.875rem;
+}
+.choose p {
+  font-weight: 500;
+}
+
+#rent {
+  width: 972px;
+  height: 136px;
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+  background-color: var(--white);
+}
+
+#stars3-rent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+  display: flex;
+}
+.rent-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.price-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.price-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  height: 75%;
+  width: 20%;
+  background: rgba(0, 164, 86, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.price-container a:hover {
+  background: rgb(1, 197, 106);
+}
+
+.price-container .price {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.price-container .stay-time {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+#stars4-rent {
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+}
+#stars4-rent .price-container a {
+  background: rgba(8, 118, 146, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#stars4-rent .price-container a:hover {
+  background: rgb(0, 159, 199);
+}
+#stars4-rent .fly-container {
+  background: rgb(8, 118, 146);
+}
+#stars5-rent {
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+}
+#stars5-rent .price-container a {
+  background: rgba(97, 0, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#stars5-rent .price-container a:hover {
+  background: rgb(162, 0, 255);
+  color: var(--white);
+}
+
+.fly-container {
+  width: 20%;
+  height: 100%;
+  background-color: #1366ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+  color: var(--white);
+}
+.fly {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fly i {
+  font-size: 1.875rem;
+}
+.fly p {
+  font-weight: 500;
+}
+#stars3-rent .fly-container {
+  background: rgb(8, 146, 82);
+}
+#stars4-rent .fly-container {
+  background: rgb(8, 118, 146);
+}
+#stars5-rent .fly-container {
+  background: rgb(162, 0, 255);
+}
+.fa-bars {
+  color: var(--Golden-Yellow);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+@media (min-width: 1100px) and (max-width: 1270px) {
+  body {
+    background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 5rem;
+  }
+  nav ul {
+    width: 60%;
+  }
+  main {
+    margin: 5rem 0 0 5rem;
+  }
+  .title p:first-of-type {
+    font-size: 1.3rem;
+  }
+  .title h1 {
+    font-size: 4rem;
+    width: 75%;
+  }
+  .title p:last-of-type {
+    width: 74%;
+    color: var(--white);
+    font-size: 1rem;
+  }
+  #flight {
+    width: 900px;
+  }
+  #hotels {
+    width: 900px;
+    height: 180px;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 25%;
+    height: 80%;
+  }
+  .hotels img {
+    width: 100%;
+    height: 95px;
+    border-radius: 10px 10px 0 0;
+  }
+  #rent {
+    width: 900px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1099px) {
+  body {
+    background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 2.5rem;
+  }
+  nav ul {
+    width: 60%;
+  }
+  main {
+    margin: 3.5rem 0 0 2.5rem;
+  }
+  .title p:first-of-type {
+    font-size: 1.3rem;
+  }
+  .title h1 {
+    font-size: 4rem;
+    width: 75%;
+  }
+  .title p:last-of-type {
+    width: 74%;
+    color: var(--white);
+    font-size: 1rem;
+  }
+  #flight {
+    width: 900px;
+  }
+  #hotels {
+    width: 900px;
+    height: 180px;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 25%;
+    height: 80%;
+  }
+  .hotels img {
+    width: 100%;
+    height: 95px;
+    border-radius: 10px 10px 0 0;
+  }
+  #rent {
+    width: 900px;
+  }
+}
+@media (min-width: 870px) and (max-width: 1024px) {
+  body {
+    background-image: url("../images/769-wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 3.5rem;
+  }
+  nav ul {
+    width: 400px;
+  }
+  nav a {
+    font-size: 0.875rem;
+  }
+  .sign {
+    width: 205px;
+  }
+  .sign a {
+    width: 95px;
+    height: 35px;
+  }
+  main {
+    margin: 3.5rem 0 0 3.5rem;
+  }
+  .title p:first-of-type {
+    font-size: 1.1rem;
+  }
+  .title h1 {
+    font-size: 3rem;
+    width: 560px;
+    line-height: 80px;
+  }
+  .title p:last-of-type {
+    width: 655px;
+    color: var(--white);
+    font-size: 0.938rem;
+  }
+  .services {
+    width: 350px;
+  }
+  #flight {
+    width: 700px;
+    height: 120px;
+    font-size: 0.938rem;
+  }
+  .Destination,
+  .When,
+  .Peoples {
+    height: 55px;
+  }
+  .card-icons img {
+    margin-right: 0.75rem;
+  }
+
+  #hotels {
+    width: 730px;
+    height: 180px;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 28%;
+  }
+
+  .hotels img {
+    width: 100%;
+    height: 95px;
+    border-radius: 10px 10px 0 0;
+  }
+  .choose {
+    height: 50%;
+  }
+  #rent {
+    width: 730px;
+  }
+  .price-container a {
+    height: 70%;
+    width: 23%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 869px) {
+  body {
+    background-image: url("../images/769-wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 1.5rem;
+  }
+  nav ul {
+    width: 400px;
+  }
+  nav a {
+    font-size: 0.875rem;
+  }
+  .sign {
+    width: 205px;
+  }
+  .sign a {
+    width: 95px;
+    height: 35px;
+  }
+  main {
+    margin: 3.5rem 0 0 1.5rem;
+  }
+  .title p:first-of-type {
+    font-size: 1.1rem;
+  }
+  .title h1 {
+    font-size: 3rem;
+    width: 560px;
+    line-height: 80px;
+  }
+  .title p:last-of-type {
+    width: 655px;
+    color: var(--white);
+    font-size: 0.938rem;
+  }
+  .services {
+    width: 350px;
+  }
+  #flight {
+    width: 700px;
+    height: 120px;
+    font-size: 0.938rem;
+  }
+  .Destination,
+  .When,
+  .Peoples {
+    height: 55px;
+  }
+  .card-icons img {
+    margin-right: 0.75rem;
+  }
+
+  #hotels {
+    width: 700px;
+    height: 180px;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 29%;
+    height: 75%;
+  }
+
+  .hotels img {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+  }
+  .hotels span {
+    margin: 5px 0;
+  }
+  .choose {
+    height: 50%;
+  }
+  #rent {
+    width: 700px;
+  }
+  .price-container a {
+    height: 70%;
+    width: 23%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .menu-btn i {
+    display: block;
+    font-size: 30px;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav {
+    display: none;
+  }
+  #click:checked ~ nav {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 45%;
+    height: 350px;
+    z-index: 10;
+    border-radius: 10px;
+    padding-top: 1rem;
+    background: rgba(74, 144, 226, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  #click:checked ~ nav {
+    right: 10%;
+  }
+  #click:checked ~ nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+  #click:checked ~ nav ul a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  #click:checked ~ nav .sign {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+
+  body {
+    height: 1320px;
+    background-size: auto;
+    background-image: url("../images/481-wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 1.5rem;
+  }
+
+  main {
+    margin: 2.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title p:first-of-type {
+    font-size: 1.1rem;
+    text-align: center;
+
+  }
+  .title h1 {
+    font-size: 2rem;
+    width: 100%;
+    line-height: initial;
+    margin-top: 1rem;
+    text-align: center;
+    
+  }
+  .title p:last-of-type {
+    width: 100%;
+    color: var(--white);
+    font-size: 1rem;
+    text-align: center;
+  }
+  .services {
+    width: 350px;
+  }
+  .cards {
+    width: 350px;
+    height: 400px;
+  }
+  #flight {
+    width: 350px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 30px 30px;
+  }
+  .flight{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .Destination,
+  .When,
+  .Peoples {
+    width: 100%;
+    height: 70px;
+  }
+  .card-icons img {
+    margin-right: 0.75rem;
+  }
+  .Search{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+  }
+  #hotels {
+    width: 350px;
+    height: 700px;
+    border-radius: 0 0 30px 30px;
+    background-image:none;
+  }
+  .hotels-choose{
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0 0 30px 30px;
+  
+  }
+  .hotels{
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 200px;
+    height: 28%;
+  }
+
+  .hotels img {
+    width: 100%;
+    height: 110px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+  }
+  .hotels span {
+    margin: 5px 0;
+  }
+  .choose-container{
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 30px 30px;
+  }
+  .choose {
+    height: 50%;
+  }
+  #rent {
+    width: 350px;
+    height: 500px;
+    border-radius: 0 0 30px 30px;
+  }
+  .rent-container{
+
+    flex-direction: column;
+    
+  }
+  .price-container{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+
+  }
+  .price-container a {
+    height: 25%;
+    width: 150px;
+  }
+  .fly-container{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+    
+  }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  .menu-btn i {
+    display: block;
+    font-size: 30px;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav {
+    display: none;
+  }
+  #click:checked ~ nav {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 50%;
+    height: 350px;
+    z-index: 10;
+    border-radius: 10px;
+    padding-top: 1rem;
+    background: rgba(74, 144, 226, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  #click:checked ~ nav {
+    right: 10%;
+  }
+  #click:checked ~ nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+  #click:checked ~ nav ul a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  #click:checked ~ nav .sign {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+
+  body {
+    height: 1350px;
+    background-size: auto;
+    background-image: url("../images/375-wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 1.5rem;
+  }
+
+  main {
+    margin: 2.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title p:first-of-type {
+    font-size: 1.1rem;
+    text-align: center;
+
+  }
+  .title h1 {
+    font-size: 1.6rem;
+    width: 100%;
+    line-height: initial;
+    margin-top: 1rem;
+    text-align: center;
+    
+  }
+  .title p:last-of-type {
+    width: 100%;
+    color: var(--white);
+    font-size: .938rem;
+    text-align: center;
+  }
+  .services {
+    width: 320px;
+  }
+  .cards {
+    width: 320px;
+    height: 400px;
+  }
+  #flight {
+    width: 320px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 30px 30px;
+  }
+  .flight{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .Destination,
+  .When,
+  .Peoples {
+    width: 100%;
+    height: 70px;
+  }
+  .card-icons img {
+    margin-right: 0.75rem;
+  }
+  .Search{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+  }
+  #hotels {
+    width: 320px;
+    height: 700px;
+    border-radius: 0 0 30px 30px;
+    background-image:none;
+  }
+  .hotels-choose{
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0 0 30px 30px;
+  
+  }
+  .hotels{
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 200px;
+    height: 28%;
+  }
+
+  .hotels img {
+    width: 100%;
+    height: 110px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+  }
+  .hotels span {
+    margin: 5px 0;
+  }
+  .choose-container{
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 30px 30px;
+  }
+  .choose {
+    height: 50%;
+  }
+  #rent {
+    width: 320px;
+    height: 500px;
+    border-radius: 0 0 30px 30px;
+  }
+  .rent-container{
+
+    flex-direction: column;
+    
+  }
+  .price-container{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+
+  }
+  .price-container a {
+    height: 25%;
+    width: 150px;
+  }
+  .fly-container{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+    
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .menu-btn i {
+    display: block;
+    font-size: 30px;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+  }
+  .fa-bars {
+
+    font-size: 1rem;
+ 
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav {
+    display: none;
+  }
+  #click:checked ~ nav {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 55%;
+    height: 350px;
+    z-index: 10;
+    border-radius: 10px;
+    padding-top: 1rem;
+    background: rgba(74, 144, 226, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  #click:checked ~ nav {
+    right: 10%;
+  }
+  #click:checked ~ nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+  #click:checked ~ nav ul a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  #click:checked ~ nav .sign {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+
+  body {
+    height: 1350px;
+    background-size: auto;
+    background-image: url("../images/375-wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 1.5rem;
+  }
+  header img{
+    width: 35px;
+    height: 35px;
+  }
+  main {
+    margin: 2.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title p:first-of-type {
+    font-size: 1rem;
+    text-align: center;
+
+  }
+  .title h1 {
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: initial;
+    margin-top: 1rem;
+    text-align: center;
+    
+  }
+  .title p:last-of-type {
+    width: 100%;
+    color: var(--white);
+    font-size: .75rem;
+    text-align: center;
+  }
+  .services {
+    width: 280px;
+  }
+  .cards {
+    width: 280px;
+    height: 400px;
+  }
+  #flight {
+    width: 280px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 30px 30px;
+  }
+  .flight{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .Destination,
+  .When,
+  .Peoples {
+    width: 100%;
+    height: 70px;
+  }
+  .card-icons img {
+    margin-right: 0.75rem;
+  }
+  .Search{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+  }
+  #hotels {
+    width: 280px;
+    height: 700px;
+    border-radius: 0 0 30px 30px;
+    background-image:none;
+  }
+  .hotels-choose{
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0 0 30px 30px;
+  
+  }
+  .hotels{
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 200px;
+    height: 28%;
+  }
+
+  .hotels img {
+    width: 100%;
+    height: 110px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+  }
+  .hotels span {
+    margin: 5px 0;
+  }
+  .choose-container{
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 30px 30px;
+  }
+  .choose {
+    height: 50%;
+  }
+  #rent {
+    width: 280px;
+    height: 500px;
+    border-radius: 0 0 30px 30px;
+  }
+  .rent-container{
+
+    flex-direction: column;
+    
+  }
+  .price-container{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+
+  }
+  .price-container a {
+    height: 25%;
+    width: 150px;
+  }
+  .fly-container{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+    
+  }
+}
+@media (min-width: 250px) and (max-width: 319px) {
+  .menu-btn i {
+    display: block;
+    font-size: 30px;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 10%;
+    z-index: 10;
+  }
+  .fa-bars {
+
+    font-size: 1rem;
+ 
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav {
+    display: none;
+  }
+  #click:checked ~ nav {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    width: 60%;
+    height: 350px;
+    z-index: 10;
+    border-radius: 10px;
+    padding-top: 1rem;
+    background: rgba(74, 144, 226, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  #click:checked ~ nav {
+    right: 10%;
+  }
+  #click:checked ~ nav ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+  #click:checked ~ nav ul a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  #click:checked ~ nav .sign {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+
+  body {
+    height: 1350px;
+    background-size: auto;
+    background-image: url("../images/375-wallpaper.jpg");
+  }
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+  header {
+    padding: 0 1rem;
+  }
+  header img{
+    width: 30px;
+    height: 30px;
+  }
+  main {
+    margin: 2.5rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title p:first-of-type {
+    font-size: 0.938rem;
+    text-align: center;
+
+  }
+  .title h1 {
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: initial;
+    margin-top: 1rem;
+    text-align: center;
+    
+  }
+  .title p:last-of-type {
+    width: 100%;
+    color: var(--white);
+    font-size: .75rem;
+    text-align: center;
+  }
+  .services {
+    width: 230px;
+  }
+  .services span {
+    margin-left: 0.5rem;
+  }
+  .cards {
+    width: 230px;
+    height: 400px;
+  }
+  #flight {
+    width: 230px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 30px 30px;
+  }
+  .flight{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .Destination,
+  .When,
+  .Peoples {
+    width: 100%;
+    height: 70px;
+  }
+  .card-icons img {
+    margin-right: 0.75rem;
+  }
+  .Search{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+  }
+  #hotels {
+    width: 230px;
+    height: 700px;
+    border-radius: 0 0 30px 30px;
+    background-image:none;
+  }
+  .hotels-choose{
+    flex-direction: column;
+    background-color: rgba(255, 255, 255);
+    border-radius: 0 0 30px 30px;
+  
+  }
+  .hotels{
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+  }
+  #three-stars,
+  #four-stars,
+  #five-stars {
+    width: 180px;
+    height: 26%;
+  }
+
+  .hotels img {
+    width: 100%;
+    height: 110px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+  }
+  .hotels span {
+    margin: 5px 0;
+  }
+  .choose-container{
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 30px 30px;
+  }
+  .choose {
+    height: 50%;
+  }
+  #rent {
+    width: 230px;
+    height: 500px;
+    border-radius: 0 0 30px 30px;
+  }
+  .rent-container{
+
+    flex-direction: column;
+    
+  }
+  .price-container{
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+
+  }
+  .price-container a {
+    height: 25%;
+    width: 150px;
+  }
+  .fly-container{
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0 30px 30px;
+    
+  }
+}
