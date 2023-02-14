@@ -71,7 +71,8 @@ body {
 }
 .bg-overlay {
   background-color: rgba(0, 0, 0, 0.1);
-  min-height: 900px;
+  height: 100%;
+  width: 100%;
 }
 header {
   height: 100px;
@@ -688,6 +689,10 @@ input[type="checkbox"] {
   .services {
     width: 350px;
   }
+  .cards {
+    width: 700px;
+    height: 136px;
+  }
   #flight {
     width: 700px;
     height: 120px;
@@ -771,6 +776,10 @@ input[type="checkbox"] {
   }
   .services {
     width: 350px;
+  }
+  .cards {
+    width: 700px;
+    height: 136px;
   }
   #flight {
     width: 700px;
